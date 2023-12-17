@@ -1,0 +1,79 @@
+:root {
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+
+    /* graphic design text */
+    --dark-desaturated: hsl(167, 40%, 24%);
+    /* photography text */
+    --dark-blue: hsl(198, 62%, 26%);
+    /* footer */
+    --dark-moderate: hsl(168, 34%, 41%);
+
+    /* Neutral */
+
+    /* Very desaturated blue */
+    --very-dark-desaturated: hsl(212, 27%, 19%);
+    /* Very dark grayish blue */
+    --very-dark-grayish: hsl(213, 9%, 39%);
+    /* Dark grayish blue*/
+    --dark-grayish: hsl(232, 10%, 55%);
+    /* Grayish blue */
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--white);
+    color: var(--dark-desaturated);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+/* font-family: 'Barlow', sans-serif;
+   font-family: 'Fraunces', serif; */
+
+/* Globales */
+h1,
+h2,
+h3 {
+    font-family: 'Fraunces', serif;
+    margin: 0 0 2rem 0;
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+a {
+    text-decoration: none;
+    color: var(white);
+}
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Header */
