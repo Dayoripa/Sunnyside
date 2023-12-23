@@ -265,6 +265,9 @@ main {
     width: 100%;
     padding: 40rem 2rem 0 2rem;
 }
+.graphic-image {
+    color: var(--dark-desaturated);
+}
 .graphic-image p {
     color: var(--very-dark-grayish);
 }
@@ -275,6 +278,9 @@ main {
     height: 72rem;
     padding: 42rem 2rem 0 2rem;
 }
+.fotography h3 {
+    color: var(--dark-blue);
+}
 .fotography p {
     color: var(--very-dark-grayish);
 }
@@ -283,7 +289,7 @@ main {
 }
 .testimonials h3 {
     text-transform: uppercase;
-    color: var(--dark-blue);
+    color: var(--grayish-blue);
     padding: 0 3rem;
     font-size: 2.3rem;
 }
