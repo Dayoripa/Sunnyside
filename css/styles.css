@@ -339,8 +339,37 @@ main {
     grid-template-columns: repeat(2, 1fr);
 }
 
-
-
+/* Footer */
+footer {
+    background-color: hsla(168, 34%, 41%, 0.836);;
+}
+.footer-container {
+    padding-top: 4.5rem;
+}
+    
+.list-footer {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.icon-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 4rem);
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 4rem 0 6rem 0;
+}
+.attribution {
+    padding-bottom: 5rem;
+    line-height: 1.3;
+    font-size: 1.5rem;
+}
+.attribution a {
+    color: var(--dark-desaturated);
+}
 /*
 header {
     background-image: url(/images/desktop/image-header.jpg);
