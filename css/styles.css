@@ -1,6 +1,7 @@
 :root {
     --Soft-red: hsl(7, 99%, 70%);
     --Yellow: hsl(51, 100%, 49%);
+    --blue-header: #3EBFFF;
 
     /* graphic design text */
     --dark-desaturated: hsl(167, 40%, 24%);
@@ -42,7 +43,7 @@ body {
     color: var(--dark-desaturated);
     font-family: var(--barlow);
     font-size: 1.8rem;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 /* Globales */
@@ -82,6 +83,29 @@ img {
     text-align: center;
 }
 
+.btn {
+    border: transparent;
+    background: none;
+    font-size: 2.7rem;
+    font-family: var(--fraunces);
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1rem;
+    position: relative;
+    width: 27rem;
+    z-index: 1;
+}
+.btn::before {
+    content: "";
+    border-radius: 4rem;
+    position: absolute;
+    bottom: .2rem;
+    left: 0;
+    height: 2.2rem;
+    width: 100%;
+    z-index: -1;
+}
+
 /* Header */
 header {
     background-image: url(/images/mobile/image-header.jpg);
@@ -89,7 +113,7 @@ header {
     background-size: cover;
     background-position: center bottom;
     color: var(--white);
-    height: 60rem;
+    height: 68rem;
     padding: 2rem;
     position: relative;
 }
@@ -111,14 +135,12 @@ header h1 {
     cursor: pointer;
 }
 
-.logo p {
-    font-size: 3rem;
+.logo img {
+    height: 3rem;
 }
 
 .container-header {
-    /* background-color: blue; */
     width: 100%;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -133,6 +155,22 @@ header h1 {
     padding: 3rem 0;
     width: 100%;
     z-index: 1;
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+    transition: all 1s ease;
+}
+
+.nav::before {
+    content: "";
+    
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-top: 4.5rem solid var(--blue-header);
+    border-right: 3rem solid var(--white);
+    border-left: 30.5rem solid var(--blue-header);
 }
 
 .list {
@@ -140,6 +178,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
     width: 100%;
 }
 
@@ -164,10 +203,135 @@ header h1 {
 
 .active {
     display: flex;
+    pointer-events: auto;
 }
 
+/* Main */
+main {
+    width: 100%;
+}
 
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    
+}
+.products h2 {
+    color: var(--very-dark-desaturated);
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+.products p {
+    color: var(--dark-grayish);
+    font-size: 2rem;
+    margin: 4rem 0;
+    
+}
 
+.transf-text {
+    padding: 6rem 2rem;
+}
+
+.btn-text {
+    border: transparent;
+    background: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    font-family: var(--fraunces);
+}
+
+.btn.btn-colory::before {
+    background-color: hsla(51, 100%, 49%, 0.267);
+}
+
+.btn.btn-colorr::before {
+    background-color: hsla(7, 99%, 70%, 0.281);
+}
+
+.stand-text {
+    padding: 6rem 2rem;
+}
+
+/* Testimonials */
+
+.graphic-image {
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70rem;
+    width: 100%;
+    padding: 40rem 2rem 0 2rem;
+}
+.graphic-image p {
+    color: var(--very-dark-grayish);
+}
+.fotography {
+    background-image: url(../images/mobile/image-photography.jpg);
+    background-position: top center;
+    background-size: cover;
+    height: 72rem;
+    padding: 42rem 2rem 0 2rem;
+}
+.fotography p {
+    color: var(--very-dark-grayish);
+}
+.testimonials {
+    padding: 8rem 0;
+}
+.testimonials h3 {
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+    padding: 0 3rem;
+    font-size: 2.3rem;
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+.testimonials-text {
+    color: var(--very-dark-grayish);
+    font-size: 2rem;
+}
+
+.t-text {
+    padding-top: 5rem;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    border-radius: 50%;
+}
+.testimonials-name {
+    font-weight: 600;
+    font-family: var(--fraunces);
+    padding-top: 4rem;
+    font-weight: 900;
+    color: var(--very-dark-desaturated);
+}
+.testimonials-profession {
+    color: var(--grayish-blue);
+}
+
+/* Gallery */
+
+.gallery {
+    width: 100%;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 
 
